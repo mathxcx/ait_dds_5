@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELA LOGIN</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://archive.org/download/windows-xp-bliss-4k-lu-3840x2400/windows-xp-bliss-4k-lu-3840x2400.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .login {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .login h2::after {
+            content: '';
+            display: block;
+            width: 200px;
+            height: 3px;
+            background-color: #235fe7;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .textbox {
+            margin-bottom: 20px;
+        }
+
+        .textbox input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border 0.3s;
+        }
+
+        .textbox input:focus {
+            border-color: #759a20;
+            outline: none;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .checkbox input {
+            margin-right: 10px;
+        }
+
+        .checkbox label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .botao {
+            width: 100%;
+            padding: 15px;
+            background-color: #235fe7;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+           
+        }
+
+        .botao:hover {
+            background-color: #759a20;
+        }
+
+        .cadastrar {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .cadastrar a {
+            color: #235fe7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cadastrar a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h2>Login</h2>
+        <form>
+            <div class="textbox">
+                <input type="email" placeholder="Seu e-mail" required>
+            </div>
+            <div class="textbox">
+                <input type="password" placeholder="Sua senha" required>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="manter-logado">
+                <label for="manter-logado">Manter-me logado</label>
+            </div>
+            <button type="submit" class="botao">Logar</button>
+            <p class="cadastrar">Ainda não tem conta? <a href="#">Cadastre-se</a></p>
+        </form>
+    </div>
+</body>
+</html>
