@@ -1,0 +1,34 @@
+'use strict';
+
+
+const instrutores =[
+
+'EMANOEL VITOR VENTURA ATANAZIO',
+'ISAAC LUCCA DE PAULA BARBARA',
+'MATHEUS SARTI BRUNELLI',
+'SARAH MONTEIRO DUQUE',
+'DEIVID GUIMARÃES GONÇALVES FILHO',
+'HELOISA RANGEL GUIMARÃES',
+'MARCO ANTÔNIO SANTOS MEDEIROS',
+'PIETRO GABRIEL HERINGER MENEZES',
+'DANIEL KALEB DE OLIVEIRA ALVES MOREIRA',
+'AMANDA XAVIER NASCIMENTO',
+'VITOR VARGAS PARAJARA',
+'SAMARA DA SILVA RIBEIRO',
+'ANNA JULYA DOS SANTOS DA SILVA',
+'AYMAR ANTONIO SILVA',
+'JOÃO PEDRO COSTA SILVA',
+'GABRIEL DE ASSIS SPERANDIO',
+'REBECCA AMORIM MENDES'
+
+];
+
+instrutores.sort();
+
+for (let i = 0; i < instrutores.length; i++) {
+    const nome = instrutores[i].split(' ');
+    const ultiNome = nome.pop(); 
+    const primNome = nome[0]; 
+    console.log(primNome, ultiNome);
+    
+}
